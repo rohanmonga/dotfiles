@@ -1,5 +1,4 @@
 defscrollback 30000
-termcapinfo xterm* ti@:te@
 vbell off
 vbell_msg "  !!  "
 altscreen on
@@ -7,3 +6,6 @@ hardstatus alwayslastline
 hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
 escape ``
 startup_message off 
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
+defbce "on"
